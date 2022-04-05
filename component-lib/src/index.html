@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/component-lib.esm.js"></script>
+    <script nomodule src="/build/component-lib.js"></script>
+    <!-- global styles and utility classes -->
+  </head>
+  <body>
+    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <chat-window>
+      <chat-msg msg="test1" is-remote={false} user-name="user1"></chat-msg>
+      <chat-msg msg="test2" user-name="user2" timestamp="04/05/2022 15:00:00"></chat-msg>
+    </chat-window>
+
+    <script>
+      const todoListElement = document.querySelector('chat-window');
+      todoListElement.addEventListener('newMsgSubmitted', event => { alert(event); console.log(event.detail) })
+    </script>
+  </body>
+</html>
