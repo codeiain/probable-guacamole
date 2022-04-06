@@ -34,7 +34,7 @@ export class ChatWindow {
       </section>
         <form class="chat-input" onSubmit={(e) => this.handleSubmit(e)}>
           <input type="text" autocomplete="on" placeholder="Type a message" value={this.value} onInput={(event) => this.handleChange(event)} />
-          <input type="submit" />
+          <input type="submit" value=""/>
         </form>
       </section>
     );

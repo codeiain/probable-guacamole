@@ -18,9 +18,7 @@ export class ChatMsg {
 
 
   render() {
-    return 	<article class={"msg-container " + (this.isRemote ? 'msg-remote' : 'msg-self')}>
-    <div class="msg-box">
-      <img class="user-img" id="user-0" src={this.avatar} />
+    return 	<article class={"extraSpace " + (this.isRemote ? 'msgFrom' : 'msgYours')}>
       <div class="flr">
         <div class="messages">
           <p class="msg" id="msg-0">
@@ -29,7 +27,6 @@ export class ChatMsg {
         </div>
         <span class="timestamp"><span class="username">{this.UserName}</span>&bull;<span class="posttime">{timeDifference(this.timestamp)}</span></span>
       </div>
-    </div>
   </article>
   }
 

@@ -14,11 +14,17 @@
     <chat-window>
       <chat-msg msg="test1" is-remote={false} user-name="user1"></chat-msg>
       <chat-msg msg="test2" user-name="user2" timestamp="04/05/2022 15:00:00"></chat-msg>
+      <chat-msg msg="test2" user-name="user2" timestamp="04/05/2022 15:00:00"></chat-msg>
+      <chat-msg msg="test2" user-name="user2" timestamp="04/05/2022 15:00:00"></chat-msg>
+      <chat-msg msg="test2" user-name="user2" timestamp="04/05/2022 15:00:00"></chat-msg>
+      <chat-msg msg="test2" user-name="user2" timestamp="04/05/2022 15:00:00"></chat-msg>
+      <chat-msg msg="test2" user-name="user2" timestamp="04/05/2022 15:00:00"></chat-msg>
+      <chat-msg msg="test2" user-name="user2" timestamp="04/05/2022 15:00:00"></chat-msg>
     </chat-window>
 
     <script>
       const todoListElement = document.querySelector('chat-window');
-      todoListElement.addEventListener('newMsgSubmitted', event => { alert(event); console.log(event.detail) })
+      todoListElement.addEventListener('newMsgSubmitted', event => { alert(event.detail); console.log(event.detail) })
     </script>
   </body>
 </html>

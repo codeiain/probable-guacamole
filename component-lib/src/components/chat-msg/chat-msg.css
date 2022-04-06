@@ -40,7 +40,6 @@
   display: inline-block;
   font-size: 11pt;
   line-height: 13pt;
-  color: rgba(255,255,255,.7);
   margin: 0 0 4px 0;
 }
 .msg:first-of-type {
@@ -71,3 +70,77 @@
 .msg-self .timestamp {
   text-align: right;
 }
+
+.msgFrom {
+  position: relative;
+  background: #07ADA3;
+  text-align: left;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  float: left;
+  left: 20px;
+  width:70%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.msgFrom::before {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  top: -1px;
+  left: -10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #ccc;
+}
+
+.msgFrom::after {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  top: 0px;
+  left: -8px;
+  border: 10px solid transparent;
+  border-top: 10px solid #07ADA3;
+  clear: both;
+}
+
+.msgYours {
+  position: relative;
+  background: #0AF8E9;
+  text-align: right;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  border-left: 20% solid white;
+  float: right;
+  right: 20px;
+  width: 70%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.msgYours::before {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  top: -1px;
+  right: -10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #ccc;
+}
+
+.msgYours::after {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  top: 0px;
+  right: -8px;
+  border: 10px solid transparent;
+  border-top: 10px solid #0AF8E9;
+  clear: both;
+}
+
+
+.extraSpace {
+  margin-bottom : 20px;
+  }
